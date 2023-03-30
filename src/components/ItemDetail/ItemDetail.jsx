@@ -1,11 +1,11 @@
 import { useState,useContext } from "react";
-import ItemCount from "../../components/ItemCount/ItemCount";
-import { cartContext } from "../../Context/CartContext";
+//import ItemCount from "../../components/ItemCount/ItemCount";
+//import { cartContext } from "../../Context/CartContext";
 //import beisbol from "../../../public/imgBe/bate.jpeg"
 
 
 const ItemDetail = ({datos}) => {
-  const {addItem} = useContext(cartContext);
+ // const {addItem} = useContext(cartContext);
   
  // const stock = 4;
   const [contador, setContador] = useState(1);
@@ -24,13 +24,8 @@ const ItemDetail = ({datos}) => {
 <h4>{datos.stock} Productos</h4>
 <h5>{datos.categoria} </h5>
 
-
-
-<ItemCount contador={contador} 
-setContador={setContador} 
-stock={datos.stock} />
 <div> 
-  <button onClick={()=> addItem(datos,contador)}>Agregar al carrito</button>
+  <button>Agregar al carrito</button>
 </div>
   
 
