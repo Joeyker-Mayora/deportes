@@ -7,7 +7,7 @@ const ItemList = ({productos}) => {
     <div className=" grid sm:grid-cols-1 md:ml-[400px] sm:ml-[250px] lg:grid-cols-2"> 
     
       {productos.map((producto)=>(
-       <div className="l" key={producto.id} to={`item/${producto.id}`}>
+       <div className=" py-6" key={producto.id} to={`item/${producto.id}`}>
         <Item producto={producto} />
        </div>
        

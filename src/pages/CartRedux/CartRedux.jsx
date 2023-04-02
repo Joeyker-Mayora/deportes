@@ -12,28 +12,33 @@ import {
  
  
 
+    const CartRedux = () => {
  
- const CartRedux = () => {
-    useEffect(()=>{
-        dispacth(getTotals())
-    }, [cart, dispacth])
-
     const cart = useSelector((state)=> state.cart)
-    const dispacth = useDispatch()
+    const dispatch = useDispatch()
+    useEffect(()=>{
+            dispatch(getTotals())
+    },[cart,dispatch])
+    
+    
     const handleRemoveFromCart = (cartItem) => {
-        dispacth(removeFromCart(cartItem))
+        dispatch(removeFromCart(cartItem))
     }
     const handleDecreaseCart =(cartItem)=> {
-    dispacth(decreaseCart(cartItem))
+    dispatch(decreaseCart(cartItem))
     }
     const handleIncreaseCart = (cartItem)=>{
-        dispacth(addToCart(cartItem))
+        dispatch(addToCart(cartItem))
 
     }
     const handleclearCart = ()=>{
-        dispacth(clearCart())
+        dispatch(clearCart())
 
     }
+   
+        
+       
+   
 
    return (
     <div className=' snap-y snap-mandatory grid sm:grid-cols-2 fixed top-0 left-0 w-screen h-screen bg-black/50'>
@@ -63,7 +68,7 @@ import {
                 {cart.cartItems?.map((cartItem)=>(
                     <div className=' mx-auto grid grid-cols-4 sm:ml-[50px] md:ml-[70px] mt-2 text-gray-500 text-sm uppercase' key={cartItem.id}>
                         <div className=''>
-                            <img className=' w-[200px] h-[200px]' src={cartItem.image} alt="/" />
+                            <img className=' rounded-xl w-[150px] h-[150px]' src={cartItem.image} alt="/" />
                             <div>
                             <h1>{cartItem.name}</h1>
                             <h1>{cartItem.categoria}</h1>

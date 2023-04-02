@@ -62,11 +62,10 @@ reducers:{
                 const itemTotal = precio * cartQuantity
 
                 cartTotal.total += itemTotal
-                cartQuantity.quantity += cartQuantity
+                cartTotal.quantity += cartQuantity
 
                 return cartTotal
-            },
-            {
+            },{
                 total: 0,
                 quantity: 0
                 
