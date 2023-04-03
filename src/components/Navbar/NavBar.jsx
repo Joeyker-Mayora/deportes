@@ -52,7 +52,7 @@ const NavBar = () => {
           </NavLink>
         </li>
       </ul>
-      <div className='flex justify-end mr-6 py-[250px]'>
+      <div className='flex justify-end mr-6 py-[220px]'>
         <NavLink to="/form" className=" bg-green-500 px-5 py-2 rounded-xl hover:bg-green-700 hover:text-white">
           Registrate
           </NavLink>  

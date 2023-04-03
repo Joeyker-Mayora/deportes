@@ -10,7 +10,7 @@ const Form = () => {
   return (
     
     <div className="flex items-center justify-center h-[400px] w-[1500px] fixed top-0 left-0 w-screen h-screen bg-black/50">
-    <form >
+    <form  method="post">
       <div className="bg-gray-500 w-96 p-6 rounded shadow-sm">
         <div className="grid grid-cols-2 ">
         <span className=" flex items-center justify-center text-4xl">RphStore</span> 
