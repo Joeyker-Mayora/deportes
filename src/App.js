@@ -7,6 +7,7 @@ import ItemDetailConatiner from './pages/ItemDetailContainer/ItemDetailConatiner
 //import CartProvider from './Context/CartProvider';
 //import Cart from './pages/Cart/Cart';
 import { ToastContainer } from 'react-toastify';
+import Form from './pages/Form/Form';
 
 
 function App() {
@@ -29,8 +30,8 @@ function App() {
         <Routes>
         <Route path='/'element={<ItemLisContainer/>} />
         <Route path='/item/:id'element={<ItemDetailConatiner />} />
-       <Route path='/categoria/:categoria'element={<ItemLisContainer />} />
-        <Route path='/categoria/:categoria/item/:id' element={<ItemDetailConatiner/>}/>
+        <Route path='/form'element={<Form/>} />
+
         <Route path='/cart' element={<CartRedux/>} />
 
 

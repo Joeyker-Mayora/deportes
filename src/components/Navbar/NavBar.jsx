@@ -1,5 +1,7 @@
 import {BsFillCartCheckFill} from 'react-icons/bs'
-import {FaFootballBall} from 'react-icons/fa'
+import { IoBaseball,IoBasketball } from "react-icons/io5";
+
+import {FaFootballBall, FaFutbol} from 'react-icons/fa'
 import { NavLink, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
@@ -14,23 +16,47 @@ const NavBar = () => {
       </div>
       
       <ul className=' pl-10 sm:pl-5'>
-        <li className="py-3">
+        <li className="py-3 px-5 rounded-full  hover:text-white hover:bg-gradient-to-r from-green-400 to-blue-400">
           <NavLink to="/">Inicio</NavLink>
         </li>
-        
-        <li  className="py-2">
-        <NavLink to="/categoria/Beisbol">Beisbol</NavLink>
+        <li className="py-2 rounded-full  hover:text-white hover:bg-gradient-to-r from-green-400 to-blue-400">
+        <NavLink to="/categoria/Futbol Americano" className="flex">
+        <div className=' mr-2 text-xl'>
+          <IoBasketball/> 
+        </div>
+        Baloncesto
+          </NavLink>
+        </li><li className="py-2 rounded-full  hover:text-white hover:bg-gradient-to-r from-green-400 to-blue-400">
+        <NavLink to="/categoria/Futbol Americano" className="flex">
+        <div className=' mr-2'>
+          <FaFutbol/> 
+        </div>
+        Futbol
+          </NavLink>
         </li>
-        <li className="py-2">
-        <NavLink to="/categoria/Baloncesto">Baloncesto</NavLink>
+        <li className="py-2 rounded-full  hover:text-white hover:bg-gradient-to-r from-green-400 to-blue-400">
+        <NavLink to="/categoria/Futbol Americano" className="flex">
+        <div className=' text-xl mr-2'>
+        <IoBaseball/> 
+
+        </div>
+        Beisbol
+          </NavLink>
         </li>
-        <li  className="py-2">
-        <NavLink to="/categoria/Futbol">Futbol</NavLink>
-        </li>
-        <li className="py-2 ">
-        <NavLink to="/categoria/Futbol Americano" className="mr-[2px]">Futbol Americano</NavLink>
+        <li className="py-2 rounded-full hover:text-white hover:bg-gradient-to-r from-green-400 to-blue-400">
+        <NavLink to="/categoria/Futbol Americano" className="flex">
+        <div className=' mr-2'>
+          <FaFootballBall/> 
+        </div>
+        Futbol Americano
+          </NavLink>
         </li>
       </ul>
+      <div className='flex justify-end mr-6 py-[250px]'>
+        <NavLink to="/form" className=" bg-green-500 px-5 py-2 rounded-xl hover:bg-green-700 hover:text-white">
+          Registrate
+          </NavLink>  
+        </div>
        </div> 
           <div className=' flex justify-end mr-4'>
         <Link to ='/cart'>
@@ -38,7 +64,7 @@ const NavBar = () => {
         <span>{cartTotalQuantity}</span>
         <BsFillCartCheckFill/>
 
-      </div>
+    </div>
       </Link>
         </div>
 

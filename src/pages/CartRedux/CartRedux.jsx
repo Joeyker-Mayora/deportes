@@ -41,7 +41,7 @@ import {
    
 
    return (
-    <div className=' snap-y snap-mandatory grid sm:grid-cols-2 fixed top-0 left-0 w-screen h-screen bg-black/50'>
+    <div className='grid sm:grid-cols-2 fixed top-0 left-0 w-screen h-screen bg-black/50'>
      <div className=' overflow-scroll mx-auto bg-white sm:w-[700px] ml-2  sm:h-[600px] md:w-[900px] md:h-[500px] rounded-lg sm:mt-2 md:mt-[50px] md:ml-[200px]'>
         
         {cart.cartItems.length === 0 ? (
@@ -71,7 +71,7 @@ import {
                             <img className=' rounded-xl w-[150px] h-[150px]' src={cartItem.image} alt="/" />
                             <div>
                             <h1>{cartItem.name}</h1>
-                            <h1>{cartItem.categoria}</h1>
+                           
                             <button className=' ml-[100px] rounded-xl bg-gray-200 p-2 hover:bg-slate-600 hover:text-white' onClick={()=> handleRemoveFromCart(cartItem)}>Eliminar</button>
                             </div>
                           
