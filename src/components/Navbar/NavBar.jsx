@@ -15,8 +15,8 @@ const NavBar = () => {
       <span className='sm:text-[25px] md:text-[50px] text-blue-700 font-bold'>Rph<span className=' text-[40px] text-green-700'>Store</span></span> 
       </div>
       
-      <ul className=' pl-10 sm:pl-5'>
-        <li className="py-3 px-5 rounded-full  hover:text-white hover:bg-gradient-to-r from-green-400 to-blue-400">
+      <ul className=' py-6 pl-10 sm:pl-5'>
+        <li className="py-2 px-5 rounded-full  hover:text-white hover:bg-gradient-to-r from-green-400 to-blue-400">
           <NavLink to="/">Inicio</NavLink>
         </li>
         <li className="py-2 rounded-full  hover:text-white hover:bg-gradient-to-r from-green-400 to-blue-400">

@@ -22,6 +22,7 @@ const Form = () => {
           className="w-full py-2 px-1 outline-none mb-4 bg-gray-200"
           placeholder="Ingresa tu nombre y apellido" 
           type="text"
+          required
            />
           
         </div>
@@ -32,6 +33,7 @@ const Form = () => {
           className="w-full py-2 px-1 outline-none mb-4 bg-gray-200"
           placeholder="Ingresa tu telefono" 
           type="text"
+          required
            />
 
             
@@ -44,6 +46,7 @@ const Form = () => {
           className="w-full py-2 px-1 outline-none mb-4 bg-gray-200"
           placeholder="Ingresa tu email" 
           type="email"
+          required
            />
           
         </div>
@@ -53,6 +56,7 @@ const Form = () => {
           className="w-full py-2 px-1 outline-none mb-4 bg-gray-200"
           placeholder="Ingresa tu contraseña" 
           type="text"
+          required
            />
 
             
@@ -64,6 +68,7 @@ const Form = () => {
           className="w-full py-2 px-1 outline-none mb-4 bg-gray-200"
           placeholder="Ingresa tu contraseña" 
           type="text"
+          required
            />
 
             
