@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
  import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { 
     addToCart, 
     clearCart, 
@@ -97,13 +97,16 @@ import {
                                 <div className='  mr-7'>
                                 <span className='text-2xl'>Subtotal</span> =  <span className=' text-3xl'>{cart.cartTotalAmount} ARS</span>
                                 </div>
-                                <div className=' py-5'>
+                                <NavLink to="/" className=' py-5'>
+                                   
                                     <button className=' text-lg rounded-lg px-11 py-2 bg-green-400 text-white hover:bg-green-600'>Comprar</button>
-                                    <Link className="" to="/">
+                                   
+                                   
+                                </NavLink>
+                                <Link to="/">
                                     <p className=' py-5 hover:text-black'>Continuar comprando</p>
                                     </Link>
                                     
-                                </div>
                             </div>
                         </div>
                     </div>

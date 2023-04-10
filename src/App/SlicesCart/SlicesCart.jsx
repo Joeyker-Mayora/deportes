@@ -27,7 +27,7 @@ reducers:{
         }else {
             const tempProduct = {... action.payload , cartQuantity: 1};
             state.cartItems.push(tempProduct)
-            toast.success(`Se agrego ${action.payload.name} correctamente a tu carrito`,{
+            toast.success(`Se agrego ${action.payload.name} a tu carrito`,{
                 position:"bottom-left"
             })
         }
