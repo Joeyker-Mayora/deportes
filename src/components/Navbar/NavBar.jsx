@@ -20,14 +20,14 @@ const NavBar = () => {
           <NavLink to="/">Inicio</NavLink>
         </li>
         <li className="py-2 rounded-full  hover:text-white hover:bg-gradient-to-r from-green-400 to-blue-400">
-        <NavLink to="/categoria/Futbol Americano" className="flex">
+        <NavLink to="/categoria/Baloncesto" className="flex">
         <div className=' mr-2 text-xl'>
           <IoBasketball/> 
         </div>
         Baloncesto
           </NavLink>
         </li><li className="py-2 rounded-full  hover:text-white hover:bg-gradient-to-r from-green-400 to-blue-400">
-        <NavLink to="/categoria/Futbol Americano" className="flex">
+        <NavLink to="/categoria/Futbol" className="flex">
         <div className=' mr-2'>
           <FaFutbol/> 
         </div>
@@ -35,7 +35,7 @@ const NavBar = () => {
           </NavLink>
         </li>
         <li className="py-2 rounded-full  hover:text-white hover:bg-gradient-to-r from-green-400 to-blue-400">
-        <NavLink to="/categoria/Futbol Americano" className="flex">
+        <NavLink to="/categoria/Beisbol" className="flex">
         <div className=' text-xl mr-2'>
         <IoBaseball/> 
 

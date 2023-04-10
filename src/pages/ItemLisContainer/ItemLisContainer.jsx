@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import { FetchAllProducts } from "../../App/SlicesProducts/SlicesProducts";
 import { useDispatch, useSelector } from "react-redux"
 import Loading from "../../components/Loading/Loading";
+import { set } from "react-hook-form";
 
 
 
@@ -96,7 +97,7 @@ useEffect(()=> {
      ? categoria.replace('%20', " ")
      : categoria;
     const filterProducts = products.filter((users) => users.categoria === remove)
-     setFiltrado(filterProducts)
+    setFiltrado(filterProducts)
  
    }
   
